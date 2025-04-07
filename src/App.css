@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #343541;
+  color: #ececf1 !important;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Universal text color rules */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+label,
+td,
+th {
+  color: #ececf1 !important;
+}
+
+input,
+textarea,
+select {
+  color: #ececf1 !important;
+}
+
+a {
+  color: #10a37f;
+}
+
+/* Chart styling for dark backgrounds */
+.chartjs-tooltip {
+  background-color: #40414f !important;
+  color: #ececf1 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.chartjs-render-monitor {
+  background-color: transparent !important;
+}
+
+/* Custom scrollbar for dark mode */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #343541;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #565869;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #10a37f;
+}
+
+/* Component specific overrides */
+.MuiAccordion-root {
+  background-color: #40414f !important;
+  color: #ececf1 !important;
+}
+
+.MuiAccordionSummary-root {
+  background-color: #40414f !important;
+}
+
+.MuiAlert-standardSuccess {
+  background-color: rgba(16, 163, 127, 0.2) !important;
+  color: #ececf1 !important;
+}
+
+.MuiAlert-standardInfo {
+  background-color: rgba(53, 162, 235, 0.2) !important;
+  color: #ececf1 !important;
+}
+
+.MuiAlert-standardWarning {
+  background-color: rgba(250, 204, 21, 0.2) !important;
+  color: #ececf1 !important;
+}
+
+.MuiAlert-standardError {
+  background-color: rgba(248, 113, 113, 0.2) !important;
+  color: #ececf1 !important;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(16, 163, 127, 0.3);
+  color: #ececf1 !important;
+}
